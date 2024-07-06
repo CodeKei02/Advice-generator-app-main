@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Colores primarios*/
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    /*Colores neutral*/
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    --white: #fff;
+
+    --font-family: font-family: "Manrope", sans-serif;
+    --font-size: 28px;
+}
+
+
+body{
+    background-color: var(--dark-blue);
+    font-family: var(--font-family);
+    max-width: 1200px;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.advice-container{
+    background-color: var(--dark-grayish-blue);
+    color: var(--white);
+    height: 350px;
+    margin: 1rem 2rem;
+    padding: 1.5rem 1rem;
+    min-width: 300px;
+    max-width: max-content;
+    min-height: max-content;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+
+    position: relative;
+}
+
+.advice-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.advice-title{
+    color: var(--neon-green);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.advice-paragraph{
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--font-size);
+    padding: .5rem;
+}
+
+.advice-img{
+    position: absolute;
+    bottom: 60px;
+    width: 90%;
+}
+
+.advice-container-button{
+    position: absolute;
+    bottom: -30px;
+}
+
+.advice-button{
+    display: inline-block;
+    background-color: var(--neon-green);
+    border-radius: 30px;
+    padding: 1rem;
+    
+    border: 0;
+    cursor: pointer;
+}
+
+.advice-button:hover{
+    box-shadow: 4px 4px 50px 10px var(--neon-green);
+}
+
+.attribution{
+    color: var(--white);
+}
+
+.attribution a {
+    color: var(--neon-green);
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px){
+    .advice-container{
+        width: 500px;
+        height: 320px;
+        max-width: none;
+    }
+
+    
+}
